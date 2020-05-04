@@ -15,10 +15,10 @@
 	}
 
 	// define site path
-	define('DIR','http://localhost/mini-cms/');
+	define('DIR','http://localhost/PHPMiniCMS/');
 
 	// define admin site path
-	define('DIRADMIN','http://localhost/mini-cms/admin/');
+	define('DIRADMIN','http://localhost/PHPMiniCMS/admin/');
 
 	// define site title for top of the browser
 	define('SITETITLE','Mini CMS');
