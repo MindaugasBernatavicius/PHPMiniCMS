@@ -1,5 +1,7 @@
 CREATE DATABASE minicms;
 
+USE minicms;
+
 CREATE TABLE IF NOT EXISTS `members` (
   `memberID` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL DEFAULT '',
