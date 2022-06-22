@@ -13,7 +13,7 @@
 			<div class="page-wrap">
 				<div class="content">
 					<?php 
-						if($_POST['submit']) {
+						if(isset($_POST['submit'])) {
 							login($conn, $_POST['username'], $_POST['password']);
 						}
 					?>

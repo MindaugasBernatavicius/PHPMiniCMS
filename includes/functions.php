@@ -31,7 +31,7 @@
 
 	// Authentication
 	function logged_in() {
-		if($_SESSION['authorized'] == true) {
+		if(isset($_SESSION['authorized']) and $_SESSION['authorized'] == true) {
 			return true;
 		} else {
 			return false;
@@ -56,11 +56,11 @@
 	// Render error messages
 	function messages() {
 		$message = '';
-		if($_SESSION['success'] != '') {
+		if(isset($_SESSION['success']) and $_SESSION['success'] != '') {
 			$message = '<div class="msg-ok">'.$_SESSION['success'].'</div>';
 			$_SESSION['success'] = '';
 		}
-		if($_SESSION['error'] != '') {
+		if(isset($_SESSION['error']) and $_SESSION['error'] != '') {
 			$message = '<div class="msg-error">'.$_SESSION['error'].'</div>';
 			$_SESSION['error'] = '';
 		}

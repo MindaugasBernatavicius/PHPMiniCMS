@@ -5,7 +5,7 @@
 	// db properties
 	define('DBHOST','localhost');
 	define('DBUSER','root');
-	define('DBPASS','mysql');
+	define('DBPASS','');
 	define('DBNAME','minicms');
 
 	// make a connection to mysql here
